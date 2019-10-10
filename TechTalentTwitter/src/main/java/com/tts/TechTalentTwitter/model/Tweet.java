@@ -21,6 +21,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Length;
+import org.springframework.aop.target.SingletonTargetSource;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -54,5 +55,8 @@ public class Tweet {
 	@ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     @JoinTable(name = "tweet_tag", joinColumns = @JoinColumn(name = "tweet_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
     private List<Tag> tags;
+	
+	set
+	
 }
 

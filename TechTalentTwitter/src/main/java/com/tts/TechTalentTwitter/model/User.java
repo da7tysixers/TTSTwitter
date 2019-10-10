@@ -76,5 +76,7 @@ public class User {
     
     @ManyToMany(mappedBy="followers")
 	private List<User> following;
+    
+ 
 
 }
