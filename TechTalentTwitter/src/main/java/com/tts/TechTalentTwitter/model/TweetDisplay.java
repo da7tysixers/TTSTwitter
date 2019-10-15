@@ -12,12 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TweetDisplay {
-	private User user;
+    private User user;
 	
-	private String message;
+    private String message;
 	
-	private String data;
+	private String date;
 	
-	private List<Tag>tags; 
-
+    private List<Tag> tags;
 }
